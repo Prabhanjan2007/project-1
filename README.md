@@ -28,6 +28,9 @@ if m in ('odd','ODD'):
         print(' BATSMEN OUT')
         print('runs scored',sum,'\nruns needed to win for the computer',sum+1)
         break
+       elif k==0:
+           sum=sum+n
+           continue
        else:
            sum=sum+k
            continue
@@ -43,11 +46,14 @@ if m in ('odd','ODD'):
         if sum1 < sum:
             print('YOU WON\nruns scored by the computer',sum1)
         break
+       elif n==0:
+           sum1=sum1+k
+           continue
        else:
            sum1=sum1+n
            if sum1 > sum:
                print('COMPUTER WON',sum1,'runs scored by computer')
-           continue
+           
   else:
        print("\t\tCOMPUTER READY TO BAT\n\t\t1st INNINGS")
        sum=0
@@ -60,6 +66,9 @@ if m in ('odd','ODD'):
          print(' COMPUTER OUT')
          print('runs scored',sum,'\nruns needed to win the game',sum+1)
          break
+        elif n==0:
+            sum=sum+k
+            continue
         else:
            sum=sum+n
            continue
@@ -75,11 +84,14 @@ if m in ('odd','ODD'):
          if sum1 < sum:
              print('COMPUTER WON\nruns scored by you',sum1)
          break
+        elif k==0:
+            sum1=sum1+n
+            continue
         else:
             sum1=sum1+k
             if sum1 > sum:
                print('YOU WON',sum,'runs scored by computer')
-            continue
+            
       
  else  :
   print('you lost the toss ')
@@ -98,6 +110,9 @@ if m in ('odd','ODD'):
          print(' COMPUTER OUT')
          print('runs scored',sum,'\nruns needed to win the game',sum+1)
          break
+        elif n==0:
+            sum=sum+k
+            continue
         else:
            sum=sum+n
            continue
@@ -111,13 +126,16 @@ if m in ('odd','ODD'):
         if k == n :
          print(' BATSMEN OUT')
          if sum1 < sum:
-             print('YOU WON\nruns scored by the you',sum1)
+             print('COMPUTER WON\nruns scored by the you',sum1)
          break
+        elif k==0:
+            sum1=sum1+n
+            continue
         else:
             sum1=sum1+k
             if sum1 > sum:
-               print('COMPUTER WON',sum,'runs scored by computer')
-            continue
+               print('YOU WON',sum,'runs scored by computer')
+            
   else:
    print("\t\tCOMPUTER READY TO BOWL\n\t\t1st INNINGS")
    sum=0
@@ -130,6 +148,9 @@ if m in ('odd','ODD'):
      print(' BATSMEN OUT')
      print('runs scored',sum,'\nruns needed to win for the computer',sum+1)
      break
+    elif k==0:
+        sum=sum+n
+        continue
     else:
      sum=sum+k
      continue
@@ -145,11 +166,14 @@ if m in ('odd','ODD'):
       if sum1 < sum:
        print('YOU WON\nruns scored by the computer',sum1)
        break
+     elif n==0:
+         sum1=sum1+k
+         continue
      else:
         sum1=sum1+n
         if sum1 > sum:
          print('COMPUTER WON',sum1,'runs scored by computer')
-         continue
+         
       
 if m in ('even','EVEN'):
  n = int(input('ENTER A NUMBER FOR TOSS : '))
@@ -173,6 +197,9 @@ if m in ('even','EVEN'):
         print(' BATSMEN OUT')
         print('runs scored',sum,'\nruns needed to win for the computer',sum+1)
         break
+       elif k==0:
+           sum=sum+n
+           continue
        else:
            sum=sum+k
            continue
@@ -188,6 +215,9 @@ if m in ('even','EVEN'):
         if sum1 < sum:
             print('YOU WON\nruns scored by the computer',sum1)
         break
+       elif n==0:
+           sum1=sum1+k
+           continue
        else:
            sum1=sum1+n
            if sum1 > sum:
@@ -205,6 +235,9 @@ if m in ('even','EVEN'):
          print(' COMPUTER OUT')
          print('runs scored',sum,'\nruns needed to win the game',sum+1)
          break
+        elif n==0:
+            sum=sum+k
+            continue
         else:
            sum=sum+n
            continue
@@ -218,12 +251,15 @@ if m in ('even','EVEN'):
         if k == n :
          print(' BATSMEN OUT')
          if sum1 < sum:
-             print('YOU WON\nruns scored by the you',sum1)
+             print('COMPUTER WON\nruns scored by the you',sum1)
          break
+        elif k==0:
+            sum1=sum1+m
+            continue
         else:
             sum1=sum1+k
             if sum1 > sum:
-               print('COMPUTER WON',sum,'runs scored by computer')
+               print('YOU WON',sum,'runs scored by computer')
    
  else  :
   print('you lost the toss ')
@@ -242,6 +278,9 @@ if m in ('even','EVEN'):
          print(' COMPUTER OUT')
          print('runs scored',sum,'\nruns needed to win the game',sum+1)
          break
+        elif n==0:
+            sum=sum+k
+            continue
         else:
            sum=sum+n
            continue
@@ -255,13 +294,16 @@ if m in ('even','EVEN'):
         if k == n :
          print(' BATSMEN OUT')
          if sum1 < sum:
-             print('YOU WON\nruns scored by the you',sum1)
+             print('COMPUTER WON\nruns scored by the you',sum1)
          break
+        elif k==0:
+            sum1=sum1+n
+            continue
         else:
             sum1=sum1+k
             if sum1 > sum:
                print('YOU  WON',sum,'runs scored by computer')
-            continue
+            
   else:
    print("\t\tCOMPUTER READY TO BOWL\n\t\t1st INNINGS")
    sum=0
@@ -274,6 +316,9 @@ if m in ('even','EVEN'):
      print(' BATSMEN OUT')
      print('runs scored',sum,'\nruns needed to win for the computer',sum+1)
      break
+    elif k==0:
+        sum=sum+n
+        continue
     else:
      sum=sum+k
      continue
@@ -287,8 +332,11 @@ if m in ('even','EVEN'):
      if k == n :
       print(' BATSMEN OUT')
       if sum1 < sum:
-       print('COMPUTER WON\nruns scored by the computer',sum1)
+       print('YOU WON\nruns scored by the computer',sum1)
        break
+     elif n==0:
+         sum1=sum1+k
+         continue
      else:
         sum1=sum1+n
         if sum1 > sum:
